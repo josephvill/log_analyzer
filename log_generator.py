@@ -2,10 +2,12 @@ import random
 import os
 from datetime import datetime, timedelta
 
+#Makes sure the log file is created and read in the correct directory
+
 BASE_DIR = os.path.dirname(__file__)
 log_path = os.path.join(BASE_DIR, "server.log")
 
-#Create Messages, Users, and IPs
+#Creating the Content of Log Rows that will be used with the Random Module
 
 log_levels = ["INFO", "WARNING", "ERROR"]
 
